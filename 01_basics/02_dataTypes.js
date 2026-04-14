@@ -1,4 +1,3 @@
-//  node 01_basics/02_dataTypes.js
 
 "use strict"; // treat all JS code as newer version
 
