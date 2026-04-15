@@ -41,3 +41,5 @@ console.log(typeof heros);
 console.log(typeof outsideTemp);
 console.log(typeof id);
 console.log(typeof userEmail);
+
+// Study link for typeof => https://262.ecma-international.org/5.1/#sec-11.4.3
