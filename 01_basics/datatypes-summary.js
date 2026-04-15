@@ -35,11 +35,42 @@ const myFunction = function() {
     console.log("Hello World");
 }
 
-console.log(typeof bigInt);
-console.log(typeof myFunction);
-console.log(typeof heros);
-console.log(typeof outsideTemp);
-console.log(typeof id);
-console.log(typeof userEmail);
+// console.log(typeof bigInt);
+// console.log(typeof myFunction);
+// console.log(typeof heros);
+// console.log(typeof outsideTemp);
+// console.log(typeof id);
+// console.log(typeof userEmail);
 
 // Study link for typeof => https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+
+
+
+// *******************************************************************************************
+
+
+// Stack(primitive), Heap(Non-Primitive)
+
+let myYoutubeName = "HaveALook"
+
+let anotherName = myYoutubeName
+anotherName = "chaiaurcode"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "ajay@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
