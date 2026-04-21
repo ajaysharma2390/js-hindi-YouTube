@@ -55,9 +55,59 @@ users[1].email // we use [1] because due to this, we got to know its an object a
 
 
 
-console.log(tinderUser); // we will use methods of (Object.) below, like obtaining keys, values
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(tinderUser); // we will use methods of (Object.) below, like obtaining keys, values
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));// gives boolean value.
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));// gives boolean value.
+
+
+
+
+// ******************* Object Destructuring ************************
+
+const course = {
+    coursename : "js in hindi",
+    price : "999",
+    courseInstructor : "hitesh"
+}
+
+// course.courseInstructor //=> instead of using this statement various times, we can do something like below:
+
+// const {courseInstructor} = course //we can extract courseInstructor from course
+// // console.log(courseInstructor); // here our work reduce after extracting the values
+
+const {courseInstructor: instructor} = course // if we think the name is too long, then we can also change the name for calling
+console.log(instructor);
+
+// adding one react topic for destructuring:
+const navbar = ({company}) => {  // instead of writing const navbar = (props.company) => {___} (where props is some object name), we are wrting ({company}) => {___}
+
+}
+
+navbar(company = "invincible")
+
+
+// ************touching APIs:************
+
+//APIs in past time, came in XML format but now they come in JSON format which looks like below:
+//object always has a name, but in JSON, this can be in form of object or array, in object, the keys and values both are strings and dont have any name.
+
+//Object type API:
+
+// {
+//     "name": "Ajay",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+// example for the JSON, visit link: api.github.com/users/hiteshchoudhary
+
+//Array type API:
+
+[
+    {},
+    {},
+    {}
+]
+// to have an example of API like these, visit randomuserme -> API section and then can understand through any JSON formatter to have a clean look.
