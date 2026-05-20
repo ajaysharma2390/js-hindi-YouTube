@@ -6,9 +6,9 @@
 ## project solution code link
 [Click here](https://stackblitz.com/edit/dom-project-chaiaurcode-9hfvnbyx?file=1-colorChanger%2Fchaiaurcode.js,1-colorChanger%2Findex.html)
 
-# Solution code
+# Solution codes
 
-## project 1
+## Project 1 Solution
 
 ```javascript
 console.log("ajay")
@@ -98,5 +98,25 @@ form.addEventListener('submit', function(e) {
   }
 
 })
+
+```
+
+## Project 3 Solution
+
+```javascript
+
+const clock = document.getElementById('clock');
+// or
+// const clock = document.querySelector('#clock')
+
+let date = new Date();
+console.log(date.toLocaleTimeString());
+
+setInterval(function () {
+  let date = new Date();
+  // console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+
 
 ```
