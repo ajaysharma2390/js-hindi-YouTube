@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAI AUR CODE | DOM</title>
+</head>
+<body style = "background-color: #212121; color: #fff;">
+     <ul class="language">
+        <li>Javascript</li>
+     </ul>
+</body>
+<script>
+    function addLanguage(langName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage('python')
+    addLanguage('typescript')
+
+    function addOptiLanguage(langName) {
+        const li = document.createElement('li')
+
+        li.appendChild(document.createTextNode(langName))
+        // or
+        // const addText = document.createTextNode(langName)
+        // li.appendChild(addText)
+
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('golang')
+
+
+    // +++++ Even more optimized way to add language ++++
+const ul = document.querySelector('.language')
+
+function addextraOptiLanguage(langName) {
+
+    const li = document.createElement('li')
+
+    li.appendChild(document.createTextNode(langName))
+
+    ul.appendChild(li)
+}
+addextraOptiLanguage('C++')
+
+
+//edit
+const secondLang = document.querySelector("li:nth-child(2)")
+console.log(secondLang);
+
+// secondLang.innerHTML = "Mojo" //=>less optimised
+const newLi = document.createElement('li')
+newLi.textContent = "Mojo"
+secondLang.replaceWith(newLi) // we can also use appendChild too
+
+//edit with another method
+const firstLang = document.querySelector("li:first-child")
+firstLang.outerHTML = '<li>TypeScript</li>'
+
+
+//remove
+const lastLang = document.querySelector("li:last-child")
+lastLang.remove()
+
+</script>
+</html>
