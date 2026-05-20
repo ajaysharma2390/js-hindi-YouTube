@@ -1,7 +1,10 @@
 # Projects related to DOM
 
-## project link
+## project practice link
 [Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
+
+## project 1 solution code link
+[Click here](https://stackblitz.com/edit/dom-project-chaiaurcode-9hfvnbyx?file=1-colorChanger%2Fchaiaurcode.js,1-colorChanger%2Findex.html)
 
 # Solution code
 
@@ -56,7 +59,5 @@ buttons.forEach((button) => {
     }
   });
 });
-
-
 
 ```
