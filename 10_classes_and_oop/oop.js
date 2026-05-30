@@ -33,7 +33,7 @@ function User(username, loginCount, isLoggedIn){
     return this // this return is implicitely done by the constructor function, so we can omit it.
 }
 
-//things "new" keyword does:
+//+++++++++++++++++ Things "new" keyword does: +++++++++++++++
 //1. creates an empty object
 //2. Constructor function is called because of the new keyword, and wraps the arguments in the constructor function.
 //3. the arguments we have written into the function are assignned into variables using this keyword.
