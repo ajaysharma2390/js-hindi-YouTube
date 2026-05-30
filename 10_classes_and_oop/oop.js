@@ -35,7 +35,7 @@ function User(username, loginCount, isLoggedIn){
 
 //things "new" keyword does:
 //1. creates an empty object
-//2. construct function is called because of the new keyword, and wraps the arguments in the constructor function.
+//2. constructor function is called because of the new keyword, and wraps the arguments in the constructor function.
 //3. the arguments we have written into the function are assignned into variables using this keyword.
 //4. the object is returned by default, so we can omit the return statement in the constructor function.
 const userOne = new User("hitesh", 12, true)
